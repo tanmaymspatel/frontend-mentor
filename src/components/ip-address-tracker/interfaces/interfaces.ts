@@ -4,15 +4,15 @@ import { number } from "yup";
  * Search Component ------------------------------------------------------------------------------------
  */
 export interface SeachIPAddressProps {
-    setIpAddress: Dispatch<number>;
+    setIpAddress: Dispatch<string>;
 }
 
 export interface ISerachFormProps {
-    setIpAddress: Dispatch<number>;
+    setIpAddress: Dispatch<string>;
 }
 
 export interface ISearchFormDetailsProps {
-    ipAddress: number | null;
+    ipAddress: string;
 }
 /**
  * Location details Component ------------------------------------------------------------------------------------

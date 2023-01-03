@@ -10,7 +10,7 @@ function SerachForm({ setIpAddress }: ISerachFormProps) {
      * intitial value of the search form
      */
     const initialValues = {
-        ipAddress: null
+        ipAddress: ''
     };
     /**
      * @name onSubmit
@@ -18,14 +18,14 @@ function SerachForm({ setIpAddress }: ISerachFormProps) {
      * @param resrtForm To reset form after submitting the value
      */
     const onSubmit = (values: ISearchFormDetailsProps, { resetForm }: any) => {
-        setIpAddress(values.ipAddress as number);
+        setIpAddress(values.ipAddress);
         resetForm({ values: '' })
     }
     /**
      * Validation criteria for the search form
      */
     const validationSchema = Yup.object({
-        ipAddress: Yup.string().required('This Field is required!')
+        ipAddress: Yup.string().required('This Field is required!').typeError('Type right format')
     })
 
     return (

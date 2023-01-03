@@ -9,7 +9,7 @@ import { getLocationFromIP } from './services/ipTrackingService';
  */
 function IpAddressTracker() {
 
-    const [ipAddress, setIpAddress] = useState<any>('');
+    const [ipAddress, setIpAddress] = useState<string>('');
     const [locationData, setLocationData] = useState<any>({})
     /**
      * getting the location data object from the entered IP Address
