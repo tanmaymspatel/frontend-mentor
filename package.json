@@ -2,7 +2,7 @@
   "name": "frontend-mentor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tanmaymspatel.github.io/frontend-mentor",
+  "homepage": "https://tanmaymspatel.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
