@@ -8,7 +8,7 @@ import { IMapResultProps } from './interfaces/interfaces';
  * Customised map marker 
  */
 const iconLocation = new L.Icon({
-    iconUrl: require('../../assets/images/icon-location.svg').default,
+    iconUrl: ('~/src/assets/images/icon-location.svg'),
     iconSize: [50, 60],
     className: 'text-dark'
 });
