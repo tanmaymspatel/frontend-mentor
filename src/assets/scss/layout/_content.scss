@@ -10,36 +10,17 @@
 }
 
 .location-details-container {
-    position: relative;
     margin-top: -80px;
     z-index: 999;
     height: 150px;
-    padding: 24px 150px;
-
-    @include media-breakpoint-down(xl) {
-        padding: 24px 400px;
-    }
-
-    @include media-breakpoint-down(lg) {
-        padding: 24px 200px;
-    }
-
-    @include media-breakpoint-down(md) {
-        padding: 24px 120px;
-    }
 
     @include media-breakpoint-down(sm) {
-        padding: 24px 40px;
         margin-top: -130px;
     }
 
 
-
-    .location-data-col {
-        padding: 1.5rem 2.25rem;
-    }
-
     .col-data {
+        padding: 1.5rem 1rem 1.5rem 2rem;
         border-right: 1px solid $secondary;
         text-align: left;
 
@@ -47,19 +28,33 @@
             border-right: none;
         }
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
+            padding: 1.25rem 0;
             border-right: none;
             text-align: center;
         }
+
     }
 
     .location-details-heading {
         letter-spacing: 2px;
-        font-size: 0.875rem;
+        font-size: 0.775rem;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 0.675rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            letter-spacing: 1px;
+        }
     }
 
     .location-data {
         font-size: 1.5rem;
         font-weight: 600;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 1rem;
+        }
     }
 }
