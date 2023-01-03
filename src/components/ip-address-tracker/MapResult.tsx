@@ -1,14 +1,16 @@
 import { MapContainer, Marker, TileLayer } from 'react-leaflet';
-
 import L from 'leaflet';
+
 import { useEffect, useState } from 'react';
 import ChangeMapView from './ChangeMapView';
 import { IMapResultProps } from './interfaces/interfaces';
+
+import image from '../../assets/images/icon-location.svg'
 /**
  * Customised map marker 
  */
 const iconLocation = new L.Icon({
-    iconUrl: ('~/src/assets/images/icon-location.svg'),
+    iconUrl: image,
     iconSize: [50, 60],
     className: 'text-dark'
 });
